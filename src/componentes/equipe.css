@@ -1,5 +1,9 @@
-h1{
+.equipe-header{
     text-align: center;
+    color: #003249;
+    margin-bottom: 5rem;
+    font-size: 3rem;
+    font-weight: 700;
 }
 
 #exp{    

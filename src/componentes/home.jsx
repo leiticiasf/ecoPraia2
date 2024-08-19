@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import banner from "../assets/dancarcomvoce.jpg";
 import projeto from "../assets/images.jpg";
 import Equipe from "./Equipe";
+import { faWeight } from "@fortawesome/free-solid-svg-icons";
 
 
 
@@ -65,14 +66,15 @@ function Home () {
 
      <section className="banner" id="home">
             <Container id="containerEntrar">
+              
                 <Row className="align-items-center">
                     <Col xs={12} md={6} xl={7}>
-                       <h1>Sobre o Mapa </h1>
-                       <p>Durante a alta temporada e dias de calor, observa-se um aumento significativo no volume de resíduos nas áreas de trilha ao redor de Florianópolis. As paisagens paradisíacas se veem sobrecarregadas por detritos de diversos tipos: calçados, plásticos, embalagens de alimentos e papel descartado.
-                      O propósito deste mapa é fornecer uma visualização dos pontos de coleta de resíduos já identificados dentro da ilha de Floripa, com o intuito de reduzir o acúmulo de detritos e trazer a conscientização pública.
+                       <h1 className="header-mapa">Nosso mapa </h1>
+                       <p>Durante a alta temporada e dias de calor, observa-se um aumento significativo no volume de resíduos nas áreas de trilha ao redor de Florianópolis. As paisagens paradisíacas se veem sobrecarregadas por detritos de diversos tipos: calçados, plásticos, embalagens de alimentos e papel descartado. </p>
+                      <p> O propósito deste mapa é fornecer uma visualização dos pontos de coleta de resíduos já identificados dentro da ilha de Floripa, com o intuito de reduzir o acúmulo de detritos e trazer a conscientização pública.
 
 </p>
-                       <p> Clique para ampliar o mapa e localize os pontos de coleta mais próximos de você!</p>
+                       <p style={{ fontWeight: 'bold', color: '#007EA7' }}> Clique para ampliar o mapa e localize os pontos de coleta mais próximos de você!</p>
                     </Col>
                         <Col xs={12} md={6} xl={5}>
                             <img id="bannerMapa" src={banner} alt="Header img" />
@@ -87,22 +89,24 @@ function Home () {
 
 
 
-        <section className="banner" id="projeto">
+        <section className="sobre" id="projeto">
             <Container id="inicio">
-                <Row className="align-items-center">
-                  <h1>Sobre o projeto</h1>
+
+                  <h1 className="header-sobre">Sobre o projeto</h1>
+                  <h2 className="subheader-sobre">Escolha de demanda</h2>
+                  <div className="conteudo-sobre">
                     <Col xs={12} md={6} xl={7}>
-                    <h2>{data[currentIndex].title}</h2>
-                    <img src={data[currentIndex].image} alt={data[currentIndex].title} /> 
+                      
+                    <h2 className="info">{data[currentIndex].title}</h2>
+                    <img className="img-info" src={data[currentIndex].image} alt={data[currentIndex].title} /> 
                     <p>{data[currentIndex].content}</p>
-                    <div className="navbar-btn">
-                    <Button type="button" variant="primary" onClick={handlePrevious}>Previous</Button> &nbsp;
+                    <div className="btn-sobre">
                     <Button type="button" variant="primary" onClick={handleNext}>Next</Button>
                     </div>
                     </Col>
                         <Col xs={12} md={6} xl={5}>
                         </Col>
-                </Row>
+                        </div>
             </Container>
             <br/><br/><br/><br/>
         </section>

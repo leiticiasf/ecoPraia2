@@ -11,7 +11,7 @@ function Equipe() {
     return(
         <>
         
-        <h1>Conheça a Nossa Equipe!</h1>
+        <h1 className="equipe-header">Conheça a Nossa Equipe!</h1>
         <br/><br/><br/>
                 <Container className="leticao">
                 <img id="exp" src={exemplo}/>
