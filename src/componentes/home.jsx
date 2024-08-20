@@ -17,18 +17,17 @@ function Home () {
 
     const data = [
       { id: 1, 
-        title: 'Informação 1',
+        title: 'Quando nos foi passado o que seria a SA nós tivemos acesso à uma ampla variedade de demandas a serem escolhidas,  porém, o que mais nos chamou atenção foi a que pedia uma ação de reciclagem nas praias. ',
         image: projeto,
-        content: 'Conteúdo da informação 1',
        },
       { id: 2, 
         title: 'Informação 2',
         image: projeto,
-        content: 'Conteúdo da informação 2' },
+      },
       { id: 3, 
         title: 'Informação 3',
         image: projeto,
-        content: 'Conteúdo da informação 3' },
+      },
      
     ];
     
@@ -90,24 +89,24 @@ function Home () {
 
 
         <section className="sobre" id="projeto">
-            <Container id="inicio">
+        <Container id="inicio">
+  <h1 className="header-sobre">Sobre o projeto</h1>
+  <h2 className="subheader-sobre">Escolha de demanda</h2>
+  <div className="conteudo-sobre">
+    <Col xs={12} md={4} xl={4}>
+      <img className="img-info" src={data[currentIndex].image} alt={data[currentIndex].title} /> 
+    </Col>
+    
+    <Col xs={12} md={8} xl={8}>
+      <h2 className="info">{data[currentIndex].title}</h2>
+      <p>{data[currentIndex].content}</p>
+      <div className="btn-sobre">
+        <Button type="button" variant="primary" onClick={handleNext}>Next</Button>
+      </div>
+    </Col>
+  </div>
+</Container>
 
-                  <h1 className="header-sobre">Sobre o projeto</h1>
-                  <h2 className="subheader-sobre">Escolha de demanda</h2>
-                  <div className="conteudo-sobre">
-                    <Col xs={12} md={6} xl={7}>
-                      
-                    <h2 className="info">{data[currentIndex].title}</h2>
-                    <img className="img-info" src={data[currentIndex].image} alt={data[currentIndex].title} /> 
-                    <p>{data[currentIndex].content}</p>
-                    <div className="btn-sobre">
-                    <Button type="button" variant="primary" onClick={handleNext}>Next</Button>
-                    </div>
-                    </Col>
-                        <Col xs={12} md={6} xl={5}>
-                        </Col>
-                        </div>
-            </Container>
             <br/><br/><br/><br/>
         </section>
     

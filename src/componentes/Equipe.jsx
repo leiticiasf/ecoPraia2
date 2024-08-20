@@ -15,7 +15,7 @@ function Equipe() {
         <br/><br/><br/>
                 <Container className="leticao">
                 <img id="exp" src={exemplo}/>
-                <div className="textoLeticia">
+                <div className="direita">
                 <h1>Letícia Ferreira</h1> 
                 <h3> Backend, Frontend e Design</h3>   
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo, eius? Dolorem sapiente cumque accusamus fugit suscipit aut quaerat! Dolore veniam cumque quo et laboriosam velit, rerum vero quas tempore voluptatem.</p>  
@@ -25,7 +25,7 @@ function Equipe() {
 
                 <Container className="sofia">
                 <img id="exp2" src={exemplo2}/>
-                <div className="textoSofia">
+                <div className="esquerda">
                 <h1>Sofia Nimet</h1> 
                 <h3>Design e Frontend</h3>   
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo, eius? Dolorem sapiente cumque accusamus fugit suscipit aut quaerat! Dolore veniam cumque quo et laboriosam velit, rerum vero quas tempore voluptatem.</p>  
@@ -36,7 +36,7 @@ function Equipe() {
 
                 <Container className="livia">
                 <img id="exp" src={exemplo3}/>
-                <div className="textoLivia">
+                <div className="direita">
                 <h1>Lívia Derks</h1> 
                 <h3>Design e Frontend</h3>   
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo, eius? Dolorem sapiente cumque accusamus fugit suscipit aut quaerat! Dolore veniam cumque quo et laboriosam velit, rerum vero quas tempore voluptatem.</p>  
@@ -47,7 +47,7 @@ function Equipe() {
 
                 <Container className="lara">
                 <img id="exp3" src={exemplo5}/>
-                <div className="textoLara">
+                <div className="esquerda">
                 <h1>Lara Drews</h1> 
                 <h3>Design e Frontend</h3>   
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo, eius? Dolorem sapiente cumque accusamus fugit suscipit aut quaerat! Dolore veniam cumque quo et laboriosam velit, rerum vero quas tempore voluptatem.</p>  
@@ -58,7 +58,7 @@ function Equipe() {
 
                 <Container className="francisco">
                 <img id="exp5" src={exemplo4}/>
-                <div className="textoFrancisco">
+                <div className="direita">
                 <h1>Francisco Gasperini</h1> 
                 <h3>Design e Frontend</h3>   
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo, eius? Dolorem sapiente cumque accusamus fugit suscipit aut quaerat! Dolore veniam cumque quo et laboriosam velit, rerum vero quas tempore voluptatem.</p>  

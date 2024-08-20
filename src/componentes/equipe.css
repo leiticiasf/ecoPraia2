@@ -1,10 +1,76 @@
 .equipe-header{
     text-align: center;
     color: #003249;
-    margin-bottom: 5rem;
+    margin-top: 5rem;
     font-size: 3rem;
+    font-weight
+    : 700;
+}
+.direita{
+    color: #000000;
+    font-size: 20px;
+    font-weight: 550;
+    margin-left: 4  5%;
+    margin-top: 15px;
+    text-align: -webkit-right;
+
+}
+.esquerda{
+    color: #000000;
+    font-size: 20px;
+    font-weight: 550;
+    margin-right: 4  5%;
+    margin-top: 15px;
+    text-align: -webkit-left;
+
+}
+.direita h1{
+    text-align: right;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+  
+}
+.esquerda h1{
+    text-align: left;
+    margin-bottom: 1rem;
+    font-size: 2rem;
     font-weight: 700;
 }
+
+.leticao h1{
+    background: linear-gradient(to right, #003249, #053b54
+    );
+    -webkit-background-clip: text;
+    background-clip: text; 
+    -webkit-text-fill-color: transparent;
+}
+.sofia h1{
+    background: linear-gradient(to right, #003249, #053b54
+    );
+    -webkit-background-clip: text;
+    background-clip: text; 
+    -webkit-text-fill-color: transparent;
+}
+.livia h1{
+    background: linear-gradient(to right, #CCDCDB, #abe3e9);
+  -webkit-background-clip: text;
+  background-clip: text; 
+  -webkit-text-fill-color: transparent;
+}
+.lara h1{
+    background: linear-gradient(to right, #CCDCDB, #80CED7, #003249);
+  -webkit-background-clip: text;
+  background-clip: text; 
+  -webkit-text-fill-color: transparent;
+}
+.francisco h1{
+    background: linear-gradient(to right, #003249, #80CED7, #CCDCDB);
+  -webkit-background-clip: text;
+  background-clip: text; 
+  -webkit-text-fill-color: transparent;
+}
+
 
 #exp{    
     border-radius: 60%;
@@ -13,23 +79,11 @@
     object-position: center;
     margin-left: 11%;
     float: left;
-}
-
-.textoLeticia{
-    margin-left:50%;
-}  
-
-.textoLeticia h3{
-    margin-left:21%;
-}
 
 
-.textoLeticia h1{
-    margin-left:18%;
-}
-
-.textoLeticia p{
-    margin-right: 13%;
+    margin-top: -100px;
+    margin-right: 31%;
+    max-width: 100%;
 }
 
 #exp2{    
@@ -39,75 +93,6 @@
     object-position: center;
     margin-right: 11%;
     float: right;
-}
-
-.textoSofia{
-    margin-right:60%;
-
-}  
-
-.textoSofia h3{
-    margin-right:21%;
-}
-
-.textoSofia p{
-    margin-right:31%;
-}
-
-.textoSofia h1{
-    margin-right: 50%;
-}
-
-.sofia{
-    margin-left: 20%;
-}
-
-#exp{    
-    border-radius: 60%;
-    width: 21%;
-    object-fit: none;
-    object-position: center;
-    margin-left: 11%;
-    float: left;
-}
-
-.textoLivia{
-    margin-left:50%;
-}  
-
-.textoLivia h3{
-    margin-left: 37%;
-}
-
-
-.textoLivia h1{
-    margin-left:18%;
-}
-
-.textoLivia p{
-    margin-right: 13%;
-}
-
-
-.textoLara{
-    margin-right:60%;
-
-}  
-
-.textoLara h3{
-    margin-right:21%;
-}
-
-.textoLara p{
-    margin-right:31%;
-}
-
-.textoLara h1{
-    margin-right: 50%;
-}
-
-.lara{
-    margin-left: 20%;
 }
 
 #exp3{    

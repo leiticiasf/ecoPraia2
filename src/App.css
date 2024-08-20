@@ -142,50 +142,13 @@ color: #003249;
 font-size: 1.5rem;
 }
 
-.info{
-  color: #003249;
-  font-size: 20px;
-  font-weight: 550;
-}
-.img-info {
-  display: block;          /* Garante que a imagem seja exibida como um bloco */
-  margin-left: 0;          /* Remove qualquer margem à esquerda */
-  margin-right: 100%;      /* Empurra a imagem para a esquerda */
-  max-width: 100%;         /* Garante que a imagem não ultrapasse o contêiner pai */
-}
-.conteudo-sobre {
-  display: flex;           /* Exibe o conteúdo em um layout flexível */
-  align-items: flex-start; /* Alinha os itens ao topo do contêiner */
-}
-
-.conteudo-sobre img {
-  align-self: flex-start;  /* Garante que a imagem esteja alinhada ao topo dentro do flexbox */
-}
-
-
-
-.header-mapa{
-  text-align: left;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  font-size: 3rem;
-  background: linear-gradient(to left, #CCDCDB, #80CED7, #003249);
-  -webkit-background-clip: text;
-  background-clip: text; 
-  -webkit-text-fill-color: transparent;
-}
-.banner{
-  color: #003249;
-  font-size: 20px;
-  font-weight: 550;
-}
-
-
 
 
 .btn-sobre{
-  float: right;
-  margin-left: 30px;
+
+  position: absolute;  
+  bottom: 10px;      
+  right: 0px;         
 }
 .btn-sobre .btn{
   background-color: #003249;
@@ -207,3 +170,47 @@ font-weight: bold;
   text-align: -webkit-right;
   color: #003249;
 }
+
+
+.info{
+  color: #003249;
+  font-size: 20px;
+  font-weight: 550;
+  margin-left: 25%;
+margin-top: 15px;
+
+}
+
+.conteudo-sobre {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  position: relative;
+}
+
+.img-info {
+  margin-top: -100px;
+  margin-right: 31%;
+  max-width: 100%;
+  width: 300px;
+}
+
+
+
+
+.header-mapa{
+  text-align: left;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  background: linear-gradient(to left, #CCDCDB, #80CED7, #003249);
+  -webkit-background-clip: text;
+  background-clip: text; 
+  -webkit-text-fill-color: transparent;
+}
+.banner{
+  color: #003249;
+  font-size: 20px;
+  font-weight: 550;
+}
+
