@@ -10,7 +10,6 @@
     color: #000000;
     font-size: 20px;
     font-weight: 550;
-    margin-left: 4  5%;
     margin-top: 15px;
     text-align: -webkit-right;
 
@@ -38,77 +37,124 @@
     font-weight: 700;
 }
 
+.direita h3{
+    color: #003249;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.esquerda h3{
+    color: #003249;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.lara h3{
+    color: #001723;
+}
+.francisco h3{
+    color: #001723;
+}
+.paragrafo-esquerda{
+    color: white;
+    font-weight: 500;
+    margin-right: 50%;
+}
+.paragrafo-direita{
+    color: white;
+    font-weight: 500;
+    margin-left: 50%;
+}
+
 .leticao h1{
-    background: linear-gradient(to right, #003249, #053b54
-    );
+    background: linear-gradient(to right, #ffffff, #abe3e9);
     -webkit-background-clip: text;
     background-clip: text; 
     -webkit-text-fill-color: transparent;
 }
 .sofia h1{
-    background: linear-gradient(to right, #003249, #053b54
-    );
+    background: linear-gradient(to right, #abe3e9, #ffffff);
     -webkit-background-clip: text;
     background-clip: text; 
     -webkit-text-fill-color: transparent;
 }
 .livia h1{
-    background: linear-gradient(to right, #CCDCDB, #abe3e9);
-  -webkit-background-clip: text;
-  background-clip: text; 
-  -webkit-text-fill-color: transparent;
+    background: linear-gradient(to right, #ffffff, #abe3e9);
+    -webkit-background-clip: text;
+    background-clip: text; 
+    -webkit-text-fill-color: transparent;
 }
 .lara h1{
-    background: linear-gradient(to right, #CCDCDB, #80CED7, #003249);
-  -webkit-background-clip: text;
-  background-clip: text; 
-  -webkit-text-fill-color: transparent;
+    background: linear-gradient(to right, #abe3e9, #ffffff);
+    -webkit-background-clip: text;
+    background-clip: text; 
+    -webkit-text-fill-color: transparent;
 }
 .francisco h1{
-    background: linear-gradient(to right, #003249, #80CED7, #CCDCDB);
-  -webkit-background-clip: text;
-  background-clip: text; 
-  -webkit-text-fill-color: transparent;
+    background: linear-gradient(to right, #ffffff, #abe3e9);
+    -webkit-background-clip: text;
+    background-clip: text; 
+    -webkit-text-fill-color: transparent;
 }
 
+
+
+
+
+
+
+/* fotosssssssss */
 
 #exp{    
     border-radius: 60%;
-    width: 21%;
-    object-fit: none;
-    object-position: center;
-    margin-left: 11%;
-    float: left;
-
-
-    margin-top: -100px;
-    margin-right: 31%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    margin-right: 0;
+    float: right;
+    margin-top: center;
     max-width: 100%;
 }
 
 #exp2{    
     border-radius: 60%;
-    width: 21%;
-    object-fit: none;
-    object-position: center;
-    margin-right: 11%;
-    float: right;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    margin-left: 0;
+    float: left;
+    margin-top: center;
+    max-width: 100%;
 }
 
 #exp3{    
-    border-radius: 50%;
-    width: 21%;
-    object-fit: none;
-    object-position: center;
-    margin-right: 11%;
+    border-radius: 60%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    margin-right: 0;
     float: right;
-}   
-
+    margin-top: center;
+    max-width: 100%;
+}
+#exp4{
+    border-radius: 60%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    margin-left: 0;
+    float: left;
+    margin-top: center;
+    max-width: 100%;
+   
+}
 #exp5{    
     border-radius: 60%;
-    width: 21%;
-    object-fit: none;
-    object-position: center;
-    margin-left: 11%;
-    float: left;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    margin-right: 0;
+    float: right;
+    margin-top: center;
+    max-width: 100%;
 }

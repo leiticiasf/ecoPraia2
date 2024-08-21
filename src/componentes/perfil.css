@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.perfil-body {
+    background-color: #c9d6ff;
+    background: linear-gradient(to top, #054562, #CCDCDB);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.profileContainer {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.profileHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profileHeader h1 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.logoutButton {
+    background-color: #003249;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.conteudo-perfil {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.profilePicture img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.profileDetails {
+    flex: 1;
+}
+
+.profileDetails h2 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.profileDetails p {
+    margin-bottom: 10px;
+}
+
+.profileActions {
+    margin-top: 20px;
+}
+
+.profileActions .btn {
+    margin-right: 10px;
+}
+
+.profileActions .btn:last-child {
+    margin-right: 0;
+}

@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import { Container, Navbar, Nav, Button, Carousel, Row, Col, } from "react-bootstrap";
 import "../App.css";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import banner from "../assets/dancarcomvoce.jpg";
 import projeto from "../assets/images.jpg";
 import Equipe from "./Equipe";
@@ -50,6 +50,7 @@ function Home () {
           </Navbar.Brand>
 
           <Nav className="me-auto">
+            <Nav.Link> <Link to="/perfil">Perfil</Link> </Nav.Link>
             <Nav.Link href="#home">Equipe</Nav.Link>
             <Nav.Link href="#features">Contato</Nav.Link>
             <Nav.Link href="#projeto">Projeto</Nav.Link>
@@ -101,7 +102,7 @@ function Home () {
       <h2 className="info">{data[currentIndex].title}</h2>
       <p>{data[currentIndex].content}</p>
       <div className="btn-sobre">
-        <Button type="button" variant="primary" onClick={handleNext}>Next</Button>
+        <Button type="button" variant="primary" onClick={handleNext}>Próximo</Button>
       </div>
     </Col>
   </div>
