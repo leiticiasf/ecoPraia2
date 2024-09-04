@@ -30,7 +30,6 @@ function Perfil() {
             <div className="profileContainer">
                 <div className="profileHeader">
                     <h1>Seu Perfil</h1>
-                    <Button onClick={handleLogout} className="logoutButton">Sair</Button>
                 </div>
                 <div className="conteudo-perfil">
                     <div className="profilePicture">
@@ -43,20 +42,17 @@ function Perfil() {
                                 className="photoInput"
                             />
                         )}
-                        <Button onClick={() => setIsEditing(!isEditing)} className="editPhotoButton">
-                            {isEditing ? 'Cancelar' : 'Editar Foto'}
-                        </Button>
                     </div>
                     <div className="profileDetails">
-                        <h2>Nome do Usuário</h2>
+                        <h2>**nome de usuário**</h2>
                         <p>Email: usuario@exemplo.com</p>
-                        <p>Data de Nascimento: 01/01/1990</p>
                         </div>
                     <div className="profileActions">
-                        <Button variant="primary">Editar Perfil</Button>
+                        <Button className="btn-editar">Editar Perfil</Button>
                     </div>
                 </div>
             </div>
+            <Button onClick={handleLogout} className="logoutButton">Sair</Button>
         </div>
     );
 }

@@ -17,7 +17,7 @@ function Home () {
 
     const data = [
       { id: 1, 
-        title: 'Quando nos foi passado o que seria a SA nós tivemos acesso à uma ampla variedade de demandas a serem escolhidas,  porém, o que mais nos chamou atenção foi a que pedia uma ação de reciclagem nas praias. ',
+        title: 'Quando nos foi passado o que seria a Situação de Aprendizado, tivemos acesso à uma ampla variedade de demandas a serem escolhidas, porém, o que mais nos chamou atenção foi a que pedia uma ação de reciclagem nas praias. ',
         image: projeto,
        },
       { id: 2, 
@@ -50,7 +50,7 @@ function Home () {
           </Navbar.Brand>
 
           <Nav className="me-auto">
-            <Nav.Link> <Link to="/perfil">Perfil</Link> </Nav.Link>
+            <Nav.Link> <Link className="perfil" to="/perfil">Perfil</Link> </Nav.Link>
             <Nav.Link href="#home">Equipe</Nav.Link>
             <Nav.Link href="#features">Contato</Nav.Link>
             <Nav.Link href="#projeto">Projeto</Nav.Link>
