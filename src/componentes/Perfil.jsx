@@ -4,10 +4,14 @@ import { useNavigate } from 'react-router-dom';
 import './perfil.css';
 
 function Perfil() {
+
     const navigate = useNavigate();
     const [isEditing, setIsEditing] = useState(false);
     const [profilePic, setProfilePic] = useState("https://via.placeholder.com/150");
-
+      
+    const editarPerfil = () => {
+        navigate('/editarPerfil')
+     }; 
     const handleLogout = () => {
         // Lógica para logout (se aplicável)
         navigate('/');
@@ -48,7 +52,7 @@ function Perfil() {
                         <p>Email: usuario@exemplo.com</p>
                         </div>
                     <div className="profileActions">
-                        <Button className="btn-editar">Editar Perfil</Button>
+                        <Button onClick={editarPerfil} className="btn-editar">Editar Perfil</Button>
                     </div>
                 </div>
             </div>

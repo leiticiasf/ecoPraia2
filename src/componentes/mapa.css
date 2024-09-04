@@ -1,0 +1,29 @@
+.mapaPagina{
+    background-color: #617f81;
+    height: 690px;
+    margin: auto;
+  }
+  
+  
+  .topnav .search-container {
+    float: right;
+  }
+  
+   .topnav input {
+    padding: 10px;
+    width: 80%;
+    margin-top: 1px;
+    font-size: 17px;
+    margin-left: 340px;
+  }
+  
+  
+  .topnav .search-container button:hover {
+    background: #ccc;
+  }
+  
+  .topnav {
+    overflow: hidden;
+    background-color: #e9e9e9;
+  }
+  

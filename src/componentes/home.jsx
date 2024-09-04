@@ -77,7 +77,7 @@ function Home () {
                        <p style={{ fontWeight: 'bold', color: '#007EA7' }}> Clique para ampliar o mapa e localize os pontos de coleta mais próximos de você!</p>
                     </Col>
                         <Col xs={12} md={6} xl={5}>
-                            <img id="bannerMapa" src={banner} alt="Header img" />
+                        <Link to="/mapa"> <img id="bannerMapa" src={banner} alt="Header img" /> </Link>
                         </Col>
                 </Row>
             </Container>
