@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Container, Navbar, Nav, Button, Carousel, Row, Col, } from "react-bootstrap";
 import "../App.css";
 import { useNavigate, Link } from "react-router-dom";
-import banner from "../assets/dancarcomvoce.jpg";
+import banner from "../assets/floripa.jpg";
 import projeto from "../assets/images.jpg";
 import Equipe from "./Equipe";
 import { faWeight } from "@fortawesome/free-solid-svg-icons";
