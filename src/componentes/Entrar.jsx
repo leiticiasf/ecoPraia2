@@ -41,15 +41,16 @@ function Entrar() {
         <div className='bodyEntrar'>
         <div className="containerEntrar" id="containerEntrar">
             <div className={`form-containerEntrar ${isSignUp ? 'sign-up' : 'sign-in'}`}>
-                {/* Conteúdo do formulário */}
+                {/* Conteúdo de tudooo */}
                 {isSignUp ? (
                     <form>
-                        {/* Formulário de cadastro */}
+                        {/* Lado de cadastro */}
                         <h1>Cadastre-se</h1>
                         
                         <div className="social-icons">
                             <a href="#" className="icon"><i className="fa-brands fa-google-plus-g"></i></a>
                         </div>
+                        {/* inputs */}
                         <input type="text" placeholder="Digite seu nome de usuário" />
                         <input type="email" placeholder="Digite seu E-mail" />
                         <input type="password" placeholder="Digite sua senha" />
@@ -59,12 +60,13 @@ function Entrar() {
                     <form>
 
                       
-                        {/* Formulário de login */}
+                        {/* Lado de login */}
                         <h1>Faça Login</h1>
 
                         <div className="social-icons">
                             <a href="#" className="icon"><i className="fa-brands fa-google-plus-g"></i></a>
                         </div>
+                        {/* inputs */}
                         <input type="email" placeholder="Usuário" />
                         <input type="password" placeholder="Senha" />
                         <button>Entrar</button>

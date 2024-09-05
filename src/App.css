@@ -1,11 +1,29 @@
-.SA-1-hex { color: #CCDCDB; }
-.SA-2-hex { color: #80CED7; }
-.SA-3-hex { color: #007EA7; }
-.SA-4-hex { color: #003249; }
-.SA-5-hex { color: #06A77D; }
-.SA-6-hex { color: #EFD49F; }
+/* paleta de cores */
+.SA-1-hex {
+  color: #CCDCDB;
+}
 
-body{
+.SA-2-hex {
+  color: #80CED7;
+}
+
+.SA-3-hex {
+  color: #007EA7;
+}
+
+.SA-4-hex {
+  color: #003249;
+}
+
+.SA-5-hex {
+  color: #06A77D;
+}
+
+.SA-6-hex {
+  color: #EFD49F;
+}
+
+body {
   background-color: #00f1e1;
 }
 
@@ -22,47 +40,34 @@ nav.navbar {
 nav.navbar .navbar-brand {
   border-radius: 50px;
   color: white;
-  margin-right: 900px; 
+  margin-right: 900px;
 }
-
-
 
 nav.navbar .me-auto .nav-link {
   color: white;
-  padding: 0 20px; 
+  padding: 0 20px;
   text-decoration: none;
 }
 
 .navbar-btn {
   float: right;
-  margin-left: 30px; 
+  margin-left: 30px;
 }
 
 .navbar-btn .btn {
-  background-color: #80CED7; 
-  color: #003249; 
+  background-color: #80CED7;
+  color: #003249;
   border: none;
-  border-radius: 10px; 
-  padding: 8px 20px;  
+  border-radius: 10px;
+  padding: 8px 20px;
   color: white;
 }
 
-.navbar-btn .btn:hover{
+.navbar-btn .btn:hover {
   background-color: #003249;
 }
 
-/* Estilo para o Carousel */
-
-
-#bannerMapa{
-  width: 90%;
-  padding: 0 30px;
-  float:left;
-  margin-left: 90px; 
-  margin-top: 10%;
-}
-
-.perfil{
+.perfil {
   text-decoration: none;
   color: white;
   padding: 0 20px;
@@ -70,17 +75,25 @@ nav.navbar .me-auto .nav-link {
 }
 
 
+#bannerMapa {
+  width: 90%;
+  padding: 0 30px;
+  float: left;
+  margin-left: 90px;
+  margin-top: 10%;
+}
+
 .containerEntrar {
   display: flex;
   justify-content: center;
   margin: 90px;
 }
 
-.exp{
+.exp {
   border-radius: 50%;
 }
 
-.login{
+.login {
   margin: auto;
   width: 40%;
   padding: 70px 0;
@@ -95,7 +108,7 @@ nav.navbar .me-auto .nav-link {
   border-radius: 20px;
 }
 
-.cadastro{
+.cadastro {
   margin: auto;
   width: 40%;
   padding: 70px 0;
@@ -114,21 +127,20 @@ nav.navbar .me-auto .nav-link {
   display: block;
   margin-bottom: 10px;
   border-radius: 20px;
-  background-color:#f2ab274b;
+  background-color: #f2ab274b;
   width: 300px;
-  height:40px;
+  height: 40px;
 }
 
 
 
 
 
-t
-  .header-sobre {
-    margin-bottom: 5rem;
-    font-size: 2.5rem;
-    font-weight: 700;
-    text-align: center;
+t .header-sobre {
+  margin-bottom: 5rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
 
 }
 
@@ -139,55 +151,54 @@ t
   font-weight: 700;
   background: linear-gradient(to right, #CCDCDB, #80CED7, #003249);
   -webkit-background-clip: text;
-  background-clip: text; 
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.subheader-sobre{
+
+.subheader-sobre {
   text-align: right;
   font-weight: 650;
-margin-top: 0px;
-color: #003249;
-font-size: 1.5rem;
+  margin-top: 0px;
+  color: #003249;
+  font-size: 1.5rem;
 }
 
-
-
-.btn-sobre{
-
-  position: absolute;  
-  bottom: 10px;      
-  right: 0px;         
+.btn-sobre {
+  position: absolute;
+  bottom: 10px;
+  right: 0px;
 }
-.btn-sobre .btn{
+/* estiliza o btn dentro do conteiner com a classe .btn-sobre */
+.btn-sobre .btn {
   background-color: #003249;
   border: none;
-  border-radius: 10px; 
-  padding: 8px 20px;  
+  border-radius: 10px;
+  padding: 8px 20px;
   color: white;
   font-weight: 500;
 
 }
 
-.btn-sobre .btn:hover{
-background-color: #80CED7;
-color: #003249;
-font-weight: 500;
+.btn-sobre .btn:hover {
+  background-color: #80CED7;
+  color: #003249;
+  font-weight: 500;
 
 }
 
 
-.sobre{
+.sobre {
   text-align: -webkit-right;
   color: #003249;
 }
 
 
-.info{
+.info {
   color: #003249;
   font-size: 20px;
   font-weight: 550;
   margin-left: 25%;
-margin-top: 15px;
+  margin-top: 15px;
 
 }
 
@@ -208,19 +219,19 @@ margin-top: 15px;
 
 
 
-.header-mapa{
+.header-mapa {
   text-align: left;
   margin-top: 2rem;
   margin-bottom: 2rem;
   font-size: 3rem;
   background: linear-gradient(to left, #CCDCDB, #80CED7, #003249);
   -webkit-background-clip: text;
-  background-clip: text; 
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.banner{
+
+.banner {
   color: #003249;
   font-size: 20px;
   font-weight: 550;
 }
-
