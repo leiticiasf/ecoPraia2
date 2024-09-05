@@ -13,7 +13,7 @@ function Perfil() {
         navigate('/editarPerfil')
      }; 
     const handleLogout = () => {
-        // Lógica para logout (se aplicável)
+        // logout caso precise
         navigate('/');
     };
 
@@ -56,6 +56,7 @@ function Perfil() {
                     </div>
                 </div>
             </div>
+            {/* botao sair  */}
             <Button onClick={handleLogout} className="logoutButton">Sair</Button>
         </div>
     );
