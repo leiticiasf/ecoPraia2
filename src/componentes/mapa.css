@@ -1,8 +1,26 @@
+
+
 .mapaPagina{
-    background-color: #617f81;
-    height: 690px;
-    margin: auto;
+    background-color: #76bfd0;
+    height: 820px;
+    margin-bottom: auto;
+    position: relative;
+    background-image: url("../assets/mapa.png");
+    border-radius: 30px;
+    background-size: 65%;
+    background-repeat: no-repeat;
+    background-position: center;
   }
+ 
+    h1{
+      text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  background-color: #003249;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+    }
   
   
   .topnav .search-container {
@@ -25,5 +43,9 @@
   .topnav {
     overflow: hidden;
     background-color: #e9e9e9;
+  }
+  
+  .mapaBody{
+margin-top: 150px;
   }
   

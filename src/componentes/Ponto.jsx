@@ -18,8 +18,8 @@ function Ponto(){
     }
     const navigate = useNavigate();
     const voltar = () => {
-                navigate("/")
-    };
+      navigate(-1); // volta p ultima pag
+  };
 
     return(
             <>
@@ -42,13 +42,11 @@ function Ponto(){
         <br/><br/><br/>
       </form>       
       </div>
-
       <input id="inputNome" type="text" placeholder="Nome da praia" /> 
       <br/><br/>
       <input id="inputEndereco"type="text" placeholder="Endereço" />
       <br/><br/>
       <input id="inputComplemento"type="text" placeholder="Complemento" />
-
       <textarea  id="inputDescricao"type="text" placeholder="Faça uma breve descrição do ponto." />
       
       <button id="botaoEnviar" onClick={enviar} >Enviar</button>

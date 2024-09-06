@@ -17,22 +17,22 @@ function Mapa(){
         navigate('/visualizar');
     }
     return(
-        <div className="mapaBody">
-        <Navbar className="topnav">
-        <div className="navbar-btn">
-        <div className="search-container">
-            <input type="text"  placeholder="Procurar ponto de coleta" name="search"/>
-            <button type="submit"></button>
-            </div>
-
-          <Button onClick={handleClick}> Voltar  </Button>  &nbsp;
-          <Button onClick={irPonto}> Adicionar Ponto  </Button>  &nbsp;
-          <Button onClick={verPonto}>Visualizar Ponto</Button>
-          </div>
-      </Navbar>
+        <div className="mapaBody">            
+            <Navbar className="topnav">
+                <div className="navbar-btn">
+                    <div className="search-container">
+                        <input type="text"  placeholder="Procurar ponto de coleta" name="search"/>
+                        <button type="submit"></button>
+                    </div>
+                    <Button onClick={handleClick}> Voltar  </Button>  &nbsp;
+                    <Button onClick={irPonto}> Adicionar Ponto  </Button>  &nbsp;
+                    <Button onClick={verPonto}>Visualizar Ponto</Button>
+                </div>
+            </Navbar>
       <Container className="mapaPagina">
-        <h1>Mapa</h1>
-                  <img id="mapa" src={mapa}/> 
+        <h1>Pontos de coleta de resíduos em Florianópolis</h1>
+
+             
         </Container>
 
         </div>

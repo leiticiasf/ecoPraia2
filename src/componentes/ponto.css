@@ -5,54 +5,70 @@
     margin-top: 9%;
     margin-left: 21%;
   }
-  
-  #inputNome {
-    background-color:#89AAAA;
+
+  .inputcustom{
     padding: 20px;
     width: 40%;
     position: absolute;
     top: 20%;
     margin-left: 43%;
     border-radius: 11px;
+  }
   
+  
+  #inputNome {
+    background-color: #ffffff;
+    padding: 10px;
+    width: 30%;
+    position: absolute;
+    top: 20%;
+    margin-left: 43%;
+    border-radius: 6px;
+    border: none;
   }
   
   #inputEndereco {
-    background-color: #89AAAA;
-    padding: 20px;
-    width: 40%;
+    background-color: #ffffff;
+    padding: 10px;
+    width: 30%;
     position: absolute;
     top: 30%;
     margin-left: 43%;
-    border-radius: 11px;
+    border-radius: 6px;
+    border: none;
+
   }
   
   #inputComplemento {
-    background-color: #89AAAA;
-    padding: 20px;
-    width: 40%;
+    background-color: #ffffff;
+    padding: 10px;
+    width: 30%;
     position: absolute;
     top: 40%;
     margin-left: 43%;
-    border-radius: 11px;
+    border-radius: 6px;
+    border: none;
+
   
   }
   
   #inputDescricao {
-    background-color:#89AAAA;
-    padding: 20px;
-    width: 62%;
+    background-color:#ffffff;
+    padding: 10px;
+    width: 52%;
     height: 30%;
     position: absolute;
     top: 55%;
-    border-radius: 11px;
+    border-radius: 6px;
     margin-left: 21%;
+    border: none;
+
   }
   
   
   
   #botaoEnviar {
-    background-color: #89AAAA; 
+    background-color: #ffffff; 
     color: black; 
     border: none;
     font-weight: 400;

@@ -1,5 +1,5 @@
 import "./visualizar.css"
-import mapa from "../assets/mapa.png"
+import mapa from "../assets/image.png"
 import { useNavigate, Link } from "react-router-dom";
 import React, {handleSubmit, useState} from "react";
 import { Container, Navbar, Button } from "react-bootstrap";
