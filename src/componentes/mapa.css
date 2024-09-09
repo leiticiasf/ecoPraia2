@@ -1,51 +1,93 @@
+.mapaPagina {
+  background: linear-gradient(to bottom, #CCDCDB, #80CED7, #63bdc7);
+  padding: 30px;
+  height: 820px;
+  margin-bottom: auto;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0px 10px 36px 9px rgba(0,0,0,0.37);
+-webkit-box-shadow: 0px 10px 36px 9px rgba(0,0,0,0.37);
+-moz-box-shadow: 0px 10px 36px 9px rgba(0,0,0,0.37);
+}
 
-
-.mapaPagina{
-    background-color: #76bfd0;
-    height: 820px;
-    margin-bottom: auto;
-    position: relative;
-    background-image: url("../assets/mapa.png");
-    border-radius: 30px;
-    background-size: 65%;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
- 
-    h1{
-      text-align: center;
+h1 {
   font-size: 2rem;
   font-weight: 700;
   background-color: #003249;
-  -webkit-background-clip: text;
   background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-    }
-  
-  
-  .topnav .search-container {
-    float: right;
-  }
-  
-   .topnav input {
-    padding: 10px;
-    width: 80%;
-    margin-top: 1px;
-    font-size: 17px;
-    margin-left: 340px;
-  }
-  
-  
-  .topnav .search-container button:hover {
-    background: #ccc;
-  }
-  
-  .topnav {
-    overflow: hidden;
-    background-color: #e9e9e9;
-  }
-  
-  .mapaBody{
-margin-top: 150px;
-  }
-  
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #e9e9e9;
+}
+
+.topnav .navbar-btn {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.mapaBody {
+  margin-top: 100px;
+}
+
+
+.mapaWrapper {
+  position: relative;
+  max-width: 700px;
+  margin: 0 auto;
+  bottom: 15%;
+}
+
+.mapaImagem {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.mapPoint {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #04374d;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.mapPoint:hover {
+  transform: scale(1.2);
+}
+
+.search-container {
+  text-align: center;
+  margin-top: 20px;
+  position: relative;
+  bottom: 30%;
+}
+
+.search-container input {
+  padding: 10px;
+  width: 30%;
+  font-size: 17px;
+  border-radius: 15px 0px 0px 15px;
+  border: none;
+ 
+}
+
+.search-container button {
+  padding: 10px;
+  font-size: 17px;
+  background-color: #003249;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 0px 15px 15px 0px;
+}
+
+.search-container button:hover {
+  background-color: #002a40;
+}

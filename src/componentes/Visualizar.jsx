@@ -36,12 +36,11 @@ function Visualizar() {
             <button type="submit"></button>
             </div>
 
-          <Button onClick={handleClick}> Voltar  </Button>  &nbsp;
+          <Button onClick={handleClick}> Voltar  </Button>   
           <Button onClick={irPonto}> Adicionar Ponto  </Button> 
-          <Button onClick={verPonto}>Visualizar Ponto</Button>
           </div>
       </Navbar>
-      <Container className="mapaPagina">
+      <Container className="vslz">
      
         <h1>Mapa</h1>
                   <img id="mapa" src={mapa}/> 
