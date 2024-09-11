@@ -81,6 +81,7 @@ nav.navbar .me-auto .nav-link {
   float: left;
   margin-left: 90px;
   margin-top: 10%;
+  border-radius: 50px;
 }
 
 .containerEntrar {
@@ -212,8 +213,9 @@ t .header-sobre {
 .img-info {
   margin-top: -100px;
   margin-right: 31%;
-  max-width: 100%;
-  width: 300px;
+  max-width: 300%;
+  width: 400px;
+  border-radius: 10px;
 }
 
 

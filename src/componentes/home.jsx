@@ -3,7 +3,7 @@ import { Container, Navbar, Nav, Button, Carousel, Row, Col, } from "react-boots
 import "../App.css";
 import { useNavigate, Link } from "react-router-dom";
 import banner from "../assets/floripa.jpg";
-import projeto from "../assets/images.jpg";
+import projeto from "../assets/praia.jpg";
 import Equipe from "./Equipe";
 import { faWeight } from "@fortawesome/free-solid-svg-icons";
 
@@ -23,12 +23,12 @@ function Home() {
     },
     {
       id: 2,
-      title: 'Informação 2',
+      title: 'A ferramenta interativa foi criada com o objetivo de ser acessível a qualquer pessoa via smartphone ou computador, permitindo que usuários identifiquem com facilidade os pontos de coleta mais próximos. ',
       image: projeto,
     },
     {
       id: 3,
-      title: 'Informação 3',
+      title: 'Convidamos todos a explorar o mapa, compartilhar a iniciativa e contribuir para um futuro mais sustentável. Estamos confiantes de que, com o engajamento da comunidade, podemos preservar as belezas naturais da ilha para as próximas gerações!',
       image: projeto,
     },
 

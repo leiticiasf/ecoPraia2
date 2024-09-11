@@ -18,9 +18,10 @@
 }
 
 #inputUser{
-    background-color:#89AAAA;
-    padding: 25px;
-    width: 40%;
+    background-color: #ffffff;
+    border: none;
+    padding: 15px;
+    width: 30%;
     position: absolute;
     top: 25%;
     margin-left: 45%;
@@ -28,9 +29,10 @@
 }
 
 #inputEmail{
-    background-color:#89AAAA;
-    padding: 25px;
-    width: 40%;
+    background-color: #ffffff;
+    border: none;
+    padding: 15px;
+    width: 30%;
     position: absolute;
     top: 37%;
     margin-left: 45%;
@@ -38,9 +40,10 @@
 }
 
 #inputSenha{
-    background-color:#89AAAA;
-    padding: 25px;
-    width: 40%;
+    background-color: #ffffff;
+    border: none;
+    padding: 15px;
+    width: 30%;
     position: absolute;
     top: 50%;
     margin-left: 45%;
@@ -48,13 +51,15 @@
 }
 
 #botaoSalvar{
-    background-color:#89AAAA;
+    background-color: #003249;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
     width: 7%;
-    height: 5%;
-    color: black;
+    height: 6%;
     position: absolute;
     top: 65%;
-    margin-left: 45%;
+    margin-left: 68%;
     border-radius: 11px;
     font-weight:500;
 }

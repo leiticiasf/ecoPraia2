@@ -1,11 +1,25 @@
+body{
+  height: 200vh;
+}
+.vslz h1{
+  font-size: 2rem;
+  font-weight: 700;
+  background-color: #003249;
+  background-clip: text;
+  margin-left: 25%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .verPonto{
-  width: 400px;
-  height: 100%;
-  padding: 100px;
-  margin-left:70%;
-  position: relative;
-  bottom: 73.7%;
-  background-color: #013348;
+  width: 401px;
+    height: 101%;
+    padding: 100px;
+    margin-left: 70%;
+    position: relative;
+    bottom: 112.5%;
+    background-color: #013348;
+    border-radius: 30px;
+
 }
 
 #imgexp{
@@ -19,40 +33,47 @@
 }
 
 #descricaoPonto{
-  width: 300px ;
-  height: 100px;
-  bottom:7%;
-  border-radius:20px ;
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  width: 301px;
+  height: 70px;
+  bottom: 9%;
+  border-radius: 12px;
   position: relative;
-  background-color: white;
-  right: 23%;
+  right: 25%;
+  font-size: 20px;
 }
 
 #visu{
-  background-color: white;
-  border-radius:20px ;
-  font-size: 22px;
-}
-
-#addcoment{
+  color: #003249;
+  font-size: 25px;
   position: relative;
   right: 50%;
-  top: 30.3% ;
+  text-align: center;
   width: 200%;
-  height:59px;
+  height: 34px;
   background-color: #EBFEFF;
+  font-weight: 600;
+  margin-top: -10%;
 }
 
+
 textarea{
-  border-radius: 20px;
-  width: 65%;
-  position: relative;
-  top:9%;
+  border-radius: 8px;
+    position: relative;
+    padding: 10px;
+    right: 25%;
+    margin-top: 156%;
+    height: 48px;
+    width: 155%;
+    font-size: 17px;
+    border-radius: 15px 0px 0px 15px;
+    border: none;
 }
 
 .vslz{
-  background-color: #76bfd0;
-  height: 820px;
+  background: linear-gradient(to bottom, #CCDCDB, #80CED7, #63bdc7);  height: 820px;
   margin-bottom: auto;
   position: relative;
   border-radius: 30px;
@@ -61,4 +82,46 @@ textarea{
 
 #mapa{
   margin-left: 15%;
+}
+
+
+.search-containerr {
+  text-align: center;
+  margin-top: 20px;
+  position: relative;
+  top: 80%;
+  right: 10%;
+  
+}
+
+.search-containerr input {
+  padding: 10px;
+  width: 30%;
+  font-size: 17px;
+  border-radius: 15px 0px 0px 15px;
+  border: none;
+ 
+}
+
+.search-containerr button {
+  padding: 10px;
+  font-size: 17px;
+  background-color: #003249;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 0px 15px 15px 0px;
+}
+
+.search-containerr button:hover {
+  background-color: #002a40;
+}
+
+#visualizarMapa{
+  width: 54%;
+  height: auto;
+  margin-left: 12%;
+  border-radius: 20px;
+  position: relative;
+  bottom: 18%;
 }

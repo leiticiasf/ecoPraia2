@@ -18,8 +18,8 @@ function Mapa() {
     navigate('/visualizar');
   };
 
-  const verDetalhesPonto = (pontoId) => {
-    navigate(`/ponto/${pontoId}`);
+  const verDetalhesPonto = () => {
+    navigate('/visualizar');  // vai p pagina de visualizar
   };
 
   return (
@@ -28,41 +28,43 @@ function Mapa() {
         <div className="navbar-btn">
           <Button onClick={handleClick}>Voltar</Button> &nbsp;
           <Button onClick={irPonto}>Adicionar Ponto</Button> &nbsp;
-          <Button onClick={verPonto}>Visualizar Ponto</Button>
         </div>
       </Navbar>
 
       <Container className="mapaPagina">
         <h1>Pontos de coleta de resíduos em Florianópolis</h1>
 
-        {/* Mapa*/}
+        {/* Mapa */}
         <div className="mapaWrapper">
-          <img src={mapa} alt="Mapa de Florianópolis" className="mapaImagem" />
+  <img src={mapa} alt="Mapa de Florianópolis" className="mapaImagem" />
 
-          {/* pontos*/}
-          <div
-            className="mapPoint"
-            style={{ top: '30%', left: '40%' }}
-            onClick={() => verDetalhesPonto(1)}
-          ></div>
-          <div
-            className="mapPoint"
-            style={{ top: '50%', left: '60%' }}
-            onClick={() => verDetalhesPonto(2)}
-          ></div>
-          <div
-            className="mapPoint"
-            style={{ top: '22%', left: '58%'}}
-            onClick={() => verDetalhesPonto(1)}
-          ></div>
-          <div
-            className="mapPoint"
-            style={{ top: '30%', left: '40%' }}
-            onClick={() => verDetalhesPonto(1)}
-          ></div>
-        </div>
+  {/* Pontos */}
+  <div
+    className="mapPoint"
+    style={{ top: '35%', left: '46%' }}
+    onClick={verDetalhesPonto}
+  >
+    <div className="mapTooltip">Santo Antônio de Lisboa</div> {/* Texto do tooltip */}
+  </div>
 
-        {/* input*/}
+  <div
+    className="mapPoint"
+    style={{ top: '58%', left: '54%' }}
+    onClick={verDetalhesPonto}
+  >
+    <div className="mapTooltip">Campeche</div>
+  </div>
+
+  <div
+    className="mapPoint"
+    style={{ top: '22%', left: '58%' }}
+    onClick={verDetalhesPonto}
+  >
+    <div className="mapTooltip">Canasvieiras</div>
+  </div>
+</div>
+
+        {/* Input */}
         <div className="search-container">
           <input type="text" placeholder="Procurar ponto de coleta" name="search" />
           <button type="submit">Buscar</button>

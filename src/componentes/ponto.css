@@ -58,9 +58,9 @@
     width: 52%;
     height: 30%;
     position: absolute;
-    top: 55%;
+    bottom: 15%;
     border-radius: 6px;
-    margin-left: 21%;
+    margin-left: 68%;
     border: none;
 
   }
@@ -78,7 +78,7 @@
     top:90%;
     margin-left: 74%;
     width: 9%;
-    height: 6%;
+    height: 10%;
   }
   
   #botaoEnviar:hover{
