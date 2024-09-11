@@ -17,9 +17,8 @@ function Visualizar() {
 
   const navigate = useNavigate();
 
-  // Voltar para a última página visitada
   const handleClick = () => {
-    navigate(-1); // Retorna à página anterior no histórico
+    navigate(-1); // 
   };
 
   const irPonto = () => {
