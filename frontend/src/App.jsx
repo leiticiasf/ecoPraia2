@@ -3,11 +3,12 @@ import React from 'react';
 import Home from './componentes/home';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Entrar from "./componentes/Entrar";
-import Ponto from "./componentes/Ponto";
 import Visualizar from "./componentes/Visualizar";
+import PontoDeColeta from "./componentes/pontoDeColeta";
 import Mapa from "./componentes/Mapa";
 import EditarPerfil from './componentes/EditarPerfil';
-import Perfil from "./componentes/Perfil";
+import Registros from './componentes/Registros';
+
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -21,20 +22,21 @@ function App() {
       {}
       <Routes>
          {}
-        <Route path="/entrar" element={<Entrar />} />
+        <Route path="/users" element={<Entrar />} />
         {}
         <Route path="/" element={<Home />} />
         {}
-        <Route path="/perfil" element={<Perfil />} />
-        {}
         <Route path="/mapa" element={<Mapa />} />
         {}
-        <Route path="/ponto" element={<Ponto />} />
+        <Route path="/pontoDeColeta" element={<PontoDeColeta />} />
         {}
         <Route path="/visualizar" element={<Visualizar/>} />
         {}
         <Route path="/editarPerfil" element={<EditarPerfil />} />
+        {}
+        <Route path="/registros" element={<Registros />} />
          </Routes>
+
         </Router>
 
           </>

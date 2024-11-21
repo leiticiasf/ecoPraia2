@@ -12,7 +12,7 @@ import { faWeight } from "@fortawesome/free-solid-svg-icons";
 function Home() {
   const navigate = useNavigate();
   const handleClick = () => {
-    navigate('/entrar');
+    navigate('/users');
   };
   // informações do Sobre o projeto
   const data = [

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ponto de Coleta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <input type="text" name="" id="nome" placeholder="nome">
+    <input type="text" name="" id="endereco" placeholder="endereco">
+    <input type="text" name="" id="complemento" placeholder="complemento">
+    <input type="text" name="" id="descricao" placeholder="descricao">
+
+        <button onclick="criarPontos()">
+        CRIAR PONTO 
+    </button>
+    <h2>Pontos Registrados</h2>
+    <button onclick="pegarPontos()">Ver Pontos</button>
+
+<table>
+  <tr>
+    <thead></thead>
+    <th>Praia</th>
+    <th>Endereço</th>
+    <th>Complemento</th>
+    <th>Descrição</th>
+  </tr>
+ <tbody id="tbody">
+    
+ </tbody>
+  
+
+</table>
+
+    
+</body>
+</html>
+            
+<script>
+    async function pegarPontos () { 
+    const resposta = await fetch('http://localhost:3333/pontoDeColeta', {
+        method: 'GET'
+        .then(function(response){
+            return response.json();
+        })
+        .then(func)
+    })
+ 
+    
+}
+pegarPontos();
+
+async function criarPontos(){
+        const nome = document.getElementById('nome').value;
+        const endereco = document.getElementById('endereco').value;
+        const complemento = document.getElementById('complemento').value;
+        const descricao = document.getElementById('descricao').value;
+
+        if(nome && endereco && complemento && descricao ){
+            const novoPonto = {
+            "name": nome,
+            "endereco":endereco,
+            "complemento":complemento,
+            "descricao": descricao
+        }
+
+ 
+
+       
+    const resposta = await fetch('http://localhost:3333/pontoDeColeta', {
+        method: 'POST',
+        headers: {
+                'Content-Type' : 'application/json'
+        },
+        body: JSON.stringify(novoPonto)
+    });
+}       
+            else{
+                alert("Preencha todos os campos!")
+            }
+      
+}
+</script>

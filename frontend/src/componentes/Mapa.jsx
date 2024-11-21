@@ -11,7 +11,7 @@ function Mapa() {
   };
 
   const irPonto = () => {
-    navigate('/ponto');
+    navigate('/pontoDeColeta');
   };
 
   const verPonto = () => {
@@ -21,6 +21,9 @@ function Mapa() {
   const verDetalhesPonto = () => {
     navigate('/visualizar');  // vai p pagina de visualizar
   };
+  const verPontos = () => {
+    navigate('/registros');  // vai p pagina de visualizar
+  };
 
   return (
     <div className="mapaBody">
@@ -28,6 +31,8 @@ function Mapa() {
         <div className="navbar-btn">
           <Button onClick={handleClick}>Voltar</Button> &nbsp;
           <Button onClick={irPonto}>Adicionar Ponto</Button> &nbsp;
+          <Button onClick={verPontos}>Pontos Registrados</Button> &nbsp;
+
         </div>
       </Navbar>
 
