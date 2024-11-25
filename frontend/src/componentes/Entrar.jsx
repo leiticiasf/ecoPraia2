@@ -17,72 +17,60 @@ function Entrar() {
     const criarUsuario = async () => {
         const user = document.getElementById("inputUser").value;
         const senha = document.getElementById("inputSenha").value;
-
-        console.log('Tentando criar usuário:', user);
-
+    
         if (user && senha) {
             const novoUsuario = {
                 name: user,
                 password: senha,
+                action: "register", // Adicione o campo "action"
             };
-
+    
             try {
-                const resposta = await axios.post(
-                    'http://localhost:3333/users', novoUsuario,
-                    {
-                        headers: { "Content-Type": "application/json" },
-                    }
-                );
-                console.log('Resposta do servidor ao criar usuário:', resposta);
-
+                const resposta = await axios.post("http://localhost:3333/users", novoUsuario, {
+                    headers: { "Content-Type": "application/json" },
+                });
+    
                 if (resposta.status === 201) {
-                    alert("Conta criada!");
+                    alert("Usuário cadastrado com sucesso!");
                 }
             } catch (erro) {
-                console.error("Erro ao criar conta:", erro);
-                if (erro.response) {
-                    // Resposta do servidor com erro
-                    console.error("Erro resposta do servidor:", erro.response.data);
-                } else if (erro.request) {
-                    // A requisição foi feita, mas não obteve resposta
-                    console.error("Erro na requisição:", erro.request);
-                } else {
-                    // Outro tipo de erro
-                    console.error("Erro desconhecido:", erro.message);
-                }
+                console.error("Erro ao criar conta:", erro.response?.data || erro.message);
+                alert(erro.response?.data?.message || "Erro desconhecido");
             }
         } else {
-            console.log("Campos de usuário ou senha não preenchidos.");
+            alert("Preencha os campos de usuário e senha.");
         }
     };
+    
 
     // Função de login
     const loginUsuario = async () => {
         const user = document.getElementById("user").value;
         const senha = document.getElementById("senha").value;
-
-        console.log('Tentando fazer login com:', user);
-
+    
         if (user && senha) {
-            const loginData = { name: user, password: senha };
-
+            const loginData = {
+                name: user,
+                password: senha,
+                action: "login", // Adicione o campo "action"
+            };
+    
             try {
-                const resposta = await axios.post('http://localhost:3333/users', loginData, {
+                const resposta = await axios.post("http://localhost:3333/users", loginData, {
                     headers: { "Content-Type": "application/json" },
                 });
-                console.log('Resposta do servidor ao tentar login:', resposta);
-
-                if (resposta.status === 201) {
+    
+                if (resposta.status === 200) {
                     alert("Login realizado com sucesso!");
-                    navigate('/homel'); // ou outra página de sucesso
+                    navigate("/homel"); // Redireciona após login bem-sucedido
                 }
             } catch (erro) {
                 console.error("Erro ao fazer login:", erro.response?.data || erro.message);
-                alert(erro.response?.data.message || "Erro desconhecido");
+                alert(erro.response?.data?.message || "Erro desconhecido");
             }
         } else {
-            console.log("Campos de usuário ou senha não preenchidos.");
-        }   
+            alert("Preencha os campos de usuário e senha.");
+        }
     };
 
     const [isSignUp, setIsSignUp] = useState(false);
