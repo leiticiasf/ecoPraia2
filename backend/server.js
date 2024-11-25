@@ -2,10 +2,12 @@
 import { fastify } from 'fastify';
 import cors from '@fastify/cors';
 import { DatabasePostgres } from './database-postgres.js';
-
+const express = require('express');
 const server = fastify();
 const databasePostgres = new DatabasePostgres();
 
+app.use(express.json());
+const app = express();
 // CORS
 server.register(cors, {
     origin: '*',
@@ -128,6 +130,22 @@ server.delete('/users/:id', async (request, reply) => {
 
     return reply.status(204).send();
 });
+
+server.post('/users', async (request, reply) => {
+    const { name, password } = request.body;
+  
+    // Buscar o usuário pelo nome
+    const users = await databasePostgres.listUsers();
+  
+    const user = users.find(u => u.name === name && u.password === password);
+  
+    if (!user) {
+      return reply.status(400).send({ message: 'Usuário ou senha incorretos' });
+    }
+  
+    // Se as credenciais forem válidas, retorne o usuário
+    return reply.status(200).send({ message: 'Login bem-sucedido', userId: user.id, userName: user.name });
+  });
 
 
 server.listen({ port: 3333 }, () => {

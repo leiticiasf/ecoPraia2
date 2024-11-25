@@ -8,6 +8,8 @@ import PontoDeColeta from "./componentes/pontoDeColeta";
 import Mapa from "./componentes/Mapa";
 import EditarPerfil from './componentes/EditarPerfil';
 import Registros from './componentes/Registros';
+import Logado from './componentes/logado';
+
 
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -35,6 +37,8 @@ function App() {
         <Route path="/editarPerfil" element={<EditarPerfil />} />
         {}
         <Route path="/registros" element={<Registros />} />
+        {}
+        <Route path="/homel" element={<Logado />} />
          </Routes>
 
         </Router>

@@ -6,6 +6,10 @@ export class DatabasePostgres {
     const pontoDeColeta = await sql`select * from pontoDeColeta`;
     return pontoDeColeta;
   }
+  async listUsers(){
+    const users = await sql`select * from users`;
+    return users;
+  }
 
 
   async createPonto(ponto) {
@@ -34,24 +38,16 @@ export class DatabasePostgres {
 
   }
 
-  async listUsers() {
-    const users = await sql`select * from users`;
-    return users;
-  }
-
   async createUser(user) {
     const id = randomUUID();
-    const name = user.name;
-    const password = user.password;
-    
+    const {name, password} = user;
     
     await sql`insert into users (id, name, password)
     values (${id}, ${name}, ${password} )`
   }
 
   async updateUser(id, user) {
-    const name = user.name;
-    const password = user.password;
+    const {name, password} = user;
 
     await sql`update users set 
         name = ${name},
@@ -64,23 +60,26 @@ export class DatabasePostgres {
     await sql`delete from users where id = ${id}`
   }
 
-  async loginUser(user) {
-    const name = user.name;
-    const password = user.password;
+  async loginUser(user, res) {
+    const { name, password } = user;
+    try {
+        const users = await sql`SELECT * FROM users WHERE name = ${name}`;
+        
+        if (users.length === 0) {
+            return res.status(400).json({ message: 'Usuário não encontrado.' });
+        }
+        
+        const foundUser = users[0];
 
-    const users = await sql`select * from users where name = ${name}`;
-    if (users.length === 0) {
-        throw new Error('Usuário não encontrado.');
+        const passwordMatch = await bcrypt.compare(password, foundUser.password);
+        if (!passwordMatch) {
+            return res.status(400).json({ message: 'Senha incorreta.' });
+        }
+
+        return res.status(200).json({ id: foundUser.id, name: foundUser.name });
+    } catch (erro) {
+        console.error(erro);
+        return res.status(500).json({ message: 'Erro interno no servidor.' });
     }
-
-    const foundUser = users[0];
-
-    // Verificação de senha
-    const passwordMatch = await bcrypt.compare(password, foundUser.password);
-    if (!passwordMatch) {
-        throw new Error('Senha incorreta.');
-    }
-
-    return { id: foundUser.id, name: foundUser.name };
 }
 }

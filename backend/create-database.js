@@ -40,5 +40,26 @@ async function createPontoDeColeta() {
   }
 }
 
+
+async function createUsers() {
+  try {
+    await sql`CREATE USER local WITH PASSWORD '12345';`;
+
+    await sql`GRANT ALL PRIVILEGES ON DATABASE users TO local;`;
+
+    await sql`GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO local;`;
+
+    await sql`GRANT ALL PRIVILEGES ON ALL FUNCTIONS IN SCHEMA public TO local;`;
+
+    await sql`GRANT ALL PRIVILEGES ON ALL SEQUENCES IN SCHEMA public TO local;`;
+
+    console.log('User created and granted privileges successfully');
+  } catch (error) {
+    console.error('Error creating user or granting privileges:', error.message);
+  } finally {
+    await sql.end();
+  }
+}
 createPontoDeColeta();
 createDatabase();
+createUsers();
