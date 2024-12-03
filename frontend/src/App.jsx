@@ -9,6 +9,8 @@ import Mapa from "./componentes/Mapa";
 import EditarPerfil from './componentes/EditarPerfil';
 import Registros from './componentes/Registros';
 import Logado from './componentes/logado';
+import EditarPonto from './componentes/EditarPonto';
+
 
 
 
@@ -37,6 +39,8 @@ function App() {
         <Route path="/editarPerfil" element={<EditarPerfil />} />
         {}
         <Route path="/registros" element={<Registros />} />
+        {}
+        <Route path="/editarPonto/:id" element={<EditarPonto />} /> 
         {}
         <Route path="/homel" element={<Logado />} />
          </Routes>

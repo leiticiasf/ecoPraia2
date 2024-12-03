@@ -273,3 +273,17 @@ text-transform: uppercase;
 margin-top: 10px;
 cursor: pointer;
 }
+
+.editarPonto{
+  background-color: #003249;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+    width: 7%;
+    height: 6%;
+    position: absolute;
+    top: 90%;
+    margin-left: 68%;
+    border-radius: 11px;
+    font-weight:500;
+}
