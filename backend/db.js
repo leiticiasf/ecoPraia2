@@ -12,6 +12,4 @@ const sql = postgres({
   ssl: false,
 });
 
-
-
 export { sql };

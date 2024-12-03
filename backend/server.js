@@ -86,11 +86,6 @@ error.descricao = 'Valor descrição não foi informado.'
 // DELETE
 server.delete('/pontoDeColeta/:id', async (request, reply) => {
     const pontoID = request.params.id;
-
-    if (!pontoID) {
-        return reply.status(400).send({ error: 'ID do ponto de coleta não foi informado.' });
-    }
-
     await databasePostgres.deletePonto(pontoID);
 
     // Responder com sucesso

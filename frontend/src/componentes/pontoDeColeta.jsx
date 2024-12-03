@@ -39,6 +39,7 @@ const PontoDeColeta = () => {
                 );
                 if (resposta.status === 201) {
                     alert("Ponto de coleta criado com sucesso!");
+                    navigate('/mapa')
                 }
             } catch (erro) {
                 console.error("Erro ao criar ponto:", erro);

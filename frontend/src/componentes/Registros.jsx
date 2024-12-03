@@ -12,6 +12,23 @@ const Registros = () => {
     };
 
     const [pontos, setPontos] = useState([]); 
+    
+    const deletarPonto = async (id) => {
+        const confirmed = window.confirm("Tem certeza de que deseja deletar este livro?");
+        if (confirmed) {
+            try {
+                await axios.delete(`http://localhost:3333/pontoDeColeta/${id}`);
+                alert('Ponto de coleta deletado com sucesso!');
+                pegarPontos();  // Atualiza a lista de pontos após deletar
+            } catch (erro) {
+                console.error("Erro ao deletar ponto de coleta:", erro);
+                alert('Erro ao deletar o ponto de coleta.');
+            }
+        }   
+    }
+    const editarPonto = async () => {
+        
+    }
 
     async function pegarPontos() {
         try {
@@ -39,6 +56,8 @@ const Registros = () => {
                     <p><strong>Endereço:</strong> {ponto.endereco}</p>
                     <p><strong>Complemento:</strong> {ponto.complemento}</p>
                     <p><strong>Descrição:</strong> {ponto.descricao}</p>
+                    <button className='butoes'>Editar</button>
+                    <button  className='butoes' onClick={() => deletarPonto(ponto.id)}>Excluir</button>
                 </div>
             ))}
         </div>

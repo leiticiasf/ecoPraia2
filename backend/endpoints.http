@@ -32,7 +32,7 @@ Content-Type: application/json
 
 ###
 
-DELETE http://localhost:3333/pontoDeColeta
+DELETE http://localhost:3333/pontoDeColeta/63e2c4be-97a8-4930-93f4-a6d1cb53128c
 
 
 
